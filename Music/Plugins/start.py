@@ -42,7 +42,7 @@ def start_pannel():
             InlineKeyboardButton(text=f"⏺️ | قناه السورس", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton(text=f"ℹ️ | الاوامر", callback_data="cbbasic"),
+            InlineKeyboardButton(text=f"ℹ️ | الاوامر", url=f"https://telegra.ph/fire-03-06"),
         ],
     ]
     return (
@@ -58,7 +58,7 @@ pstart_markup = InlineKeyboardMarkup(
                 "اضغط لـ اضافتي لمجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton(text=f"ℹ️ | الاوامر", callback_data="cbbasic"),
+            InlineKeyboardButton(text=f"ℹ️ | الاوامر", url=f"https://telegra.ph/fire-03-06"),
         ],
         [        
             InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/Q_o_ll_bot"),
