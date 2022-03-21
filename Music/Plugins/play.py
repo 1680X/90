@@ -324,7 +324,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Audio Yang Dipilih Dari Telegram"
-        link = "https://t.me/J_X_S3"
+        link = "https://t.me/Q_o_ll"
         thumb = "cache/Audio.png"
         videoid = "smex1"
     elif url:
@@ -474,7 +474,7 @@ async def play(_, message: Message):
             return await mystic.edit_text(
                 f"لم يتم العثور على الأغنية.\n**الأسباب المحتملة:** {e} "
             )
-        thumb ="https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg"
+        thumb ="https://telegra.ph/file/a7d4219016b38254e8803.jpg"
         await mystic.delete()
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
