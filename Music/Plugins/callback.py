@@ -85,71 +85,8 @@ async def isPreviewUp(preview: str) -> bool:
             return True if status == 200 else False
     return False
 
-@Client.on_callback_query(filters.regex("cbstart"))
-async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(
-        f"""**
-[𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜  𝐟𝐢𝐫𝐞](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
-ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ
-〉 ♬ 𝐝𝐞𝐯 𝐦𝐮𝐬𝐢𝐜 : [.َ ‹𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷](https://t.me/Q_o_ll)
-〉 ♬ 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞 : [𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞](https://t.me/CH_SUR)
-〉 ♬ 𝐓𝐖𝐒𝐎𝐋 : [𝐆𝐑𝐎𝐔𝐏 𝐓𝐖𝐒](t.me/Q_b_2l)
- ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ**""",
-        reply_markup=InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(
-                "اضغط لـ اضافتي لمجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-        ],
-        [
-            InlineKeyboardButton(text=f"ℹ️ | الاوامر", callback_data="cbbasic"
-        ],
-        [        
-            InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/Q_o_ll_bot"),
-            InlineKeyboardButton(text=f"🚸 | الــــمطور", url=f"https://t.me/{DEVLOAR}"),
-        ],
-        [
-            InlineKeyboardButton(text=f"👥 | التواصل", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton(text=f"⏺️ | قناه السورس", url=f"https://t.me/{CHANNEL}"),
-        ],
-        [        
-            InlineKeyboardButton(text=f".َ ‹𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷", url=f"https://t.me/Q_o_ll"),
-        ],
-    ]
-)
-       
-    
-    @Client.on_callback_query(filters.regex("cbbasic"))
-async def cbbasic(_, query: CallbackQuery):
-    await query.edit_message_text(
-        f"""🏮 هنا الأوامر الأساسية:
-اومر العربي :
-شفل وتشغيل :>لتشغيل الاغنيه 
-وقف وايقاف :>لايقاف الاغنيه 
-فشغل فتشغيل :> لتشغيل فيديو 
-استني :> لايقاف المؤقت 
-كمل :>لستكامل الاغنيه
-تخطي :> لتغيير الاغنيه 
 
-/play (query)play music from youtube
-/vplay (query)play video from youtube
-/vstream :- (live link)play video live streaming video
-/pause pause the streaming (admin only)
-/resume resume the streaming (admin only)
-/skip switch to next stream (admin only)
-/stopend the streaming (admin only)
-/vmute for mute the userbot on voice chat
-/vunmute for unmute the userbot on voice chat
-/volume 1/200adjust the volume of userbot (userbot must be admin)
-/playlist show you all the current stream list
-/song (query)download music from youtube
-/video (query)download video from youtube
 
-⚡️ __Powered by {BOT_USERNAME} AI__""",
-        reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardMarkup("🔙 الرجوع", callback_data="cbstart")]]
-        ),
-    )
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
