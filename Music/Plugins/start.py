@@ -139,7 +139,7 @@ async def play(_, message: Message):
              await app.send_message(
             message.chat.id,
             text=f"""**
-[𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜  𝐟𝐢𝐫𝐞](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
+[𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜  𝐟𝐢𝐫𝐞](https://telegra.ph/file/a7d4219016b38254e8803.jpg)
 ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ
 〉 ♬ 𝐝𝐞𝐯 𝐦𝐮𝐬𝐢𝐜 : [.َ ‹𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷](https://t.me/Q_o_ll)
 〉 ♬ 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞 : [𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞](https://t.me/CH_SUR)
