@@ -42,7 +42,7 @@ def start_pannel():
             InlineKeyboardButton(text=f"⏺️ | قناه السورس", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton(text=f"ℹ️ | الاوامر", callback_data="cbbasic"),
+            InlineKeyboardButton(text=f"ℹ️ | الاوامر", url=f"https://telegra.ph/fire-03-06"),
         ],
     ]
     return (
@@ -58,11 +58,11 @@ pstart_markup = InlineKeyboardMarkup(
                 "اضغط لـ اضافتي لمجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton(text=f"ℹ️ | الاوامر", callback_data="cbbasic"),
+            InlineKeyboardButton(text=f"ℹ️ | الاوامر", url=f"https://telegra.ph/fire-03-06"),
         ],
         [        
             InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/Q_o_ll_bot"),
-            InlineKeyboardButton(text=f"🚸 | الــــمطور", url=f"https://t.me/{DEVLOAR}"),
+            InlineKeyboardButton(text=f"🚸 | الــــمطور", url=f"https://t.me/Mahmo9"),
         ],
         [
             InlineKeyboardButton(text=f"👥 | التواصل", url=f"https://t.me/{GROUP}"),
@@ -118,12 +118,11 @@ async def start(_, message: Message):
     chat_id = message.chat.id
     out = start_pannel()
     await message.reply_text(
-        f"""**
+        f"""**[👋](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
 شكرًا لإدراجي في {message.chat.title}.
 الموسيقى حية.
 
 للمساعدة الرجاء الضغط على الزر أدناه.
-[👋](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
 **""",
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
@@ -136,7 +135,7 @@ async def play(_, message: Message):
         user_id = message.from_user.id
         user_name = message.from_user.first_name
         rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
-             await app.send_message(
+        await app.send_message(
             message.chat.id,
             text=f"""**
 [𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜  𝐟𝐢𝐫𝐞](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
