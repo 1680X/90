@@ -440,7 +440,7 @@ async def play(_, message: Message):
             what = "Command"
             await LOG_CHAT(message, what)
             user_name = message.from_user.first_name
-            thumb ="cache/IMG_20211230_165039_159.jpg"
+            thumb ="https://telegra.ph/file/a7d4219016b38254e8803.jpg"
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
