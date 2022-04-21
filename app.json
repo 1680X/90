@@ -22,7 +22,7 @@
         "LOG_GROUP_ID": {
             "description": "buat grup pribadi dan dapatkan id grup, tambahkan bot Anda sebagai admin ke grup juga",
             "required": true,
-            "value": "-1001505131111"
+            "value": "-1001767796798"
         },
         "API_ID": {
             "description": "ID Api Anda dari my.telegram.org",
