@@ -61,7 +61,7 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton(text=f"ℹ️ | الاوامر", url=f"https://telegra.ph/fire-03-06"),
         ],
         [        
-            InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/Q_o_ll_bot"),
+            InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/J_As_bot"),
             InlineKeyboardButton(text=f"🚸 | الــــمطور", url=f"https://t.me/Q_o_ll"),
         ],
         [
@@ -141,7 +141,7 @@ async def play(_, message: Message):
 [𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜  𝐟𝐢𝐫𝐞](https://telegra.ph/file/a7d4219016b38254e8803.jpg)
 ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ
 〉 ♬ 𝐝𝐞𝐯 𝐦𝐮𝐬𝐢𝐜 : [.َ ‹𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷](https://t.me/Q_o_ll)
-〉 ♬ 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞 : [𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞](https://t.me/CH_SUR)
+〉 ♬ 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞 : [𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞](https://t.me/B_O_N_t)
 〉 ♬ 𝐓𝐖𝐒𝐎𝐋 : [𝐆𝐑𝐎𝐔𝐏 𝐓𝐖𝐒](t.me/Q_b_2l)
  ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ**""",
             parse_mode="markdown",
