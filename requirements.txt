@@ -1,7 +1,5 @@
 tgcrypto
-pyrogram
-py-tgcalls
-pybase64
+pyrogram==1.4.12pybase64
 youtube-search-python
 yt-dlp==2021.11.10.1
 ffmpeg-python
