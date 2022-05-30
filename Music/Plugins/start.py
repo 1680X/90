@@ -61,15 +61,15 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton(text=f"ℹ️ | الاوامر", url=f"https://telegra.ph/fire-03-06"),
         ],
         [        
-            InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/J_As_bot"),
-            InlineKeyboardButton(text=f"🚸 | الــــمطور", url=f"https://t.me/Q_o_ll"),
+            InlineKeyboardButton(text=f"⏏️ | بوت السورس", url=f"https://t.me/{BOT_USERNAME}"),
+            InlineKeyboardButton(text=f"🚸 | الــــمطور", url=f"https://t.me/{DEVLOAR}"),
         ],
         [
             InlineKeyboardButton(text=f"👥 | التواصل", url=f"https://t.me/{GROUP}"),
             InlineKeyboardButton(text=f"⏺️ | قناه السورس", url=f"https://t.me/{CHANNEL}"),
         ],
         [        
-            InlineKeyboardButton(text=f".َ ‹𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷", url=f"https://t.me/Q_o_ll"),
+            InlineKeyboardButton(text=f"👤| مبرمج السورس", url=f"https://t.me/Q_o_ll"),
         ],
     ]
 )
@@ -95,7 +95,7 @@ async def welcome(_, message: Message):
             if member.id == BOT_ID:
                 out = start_pannel()
                 await message.reply_text(
-                    f"""**[👋](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
+                    f"""**[👋](https://te.legra.ph/file/3e3e10364a630da0ef1d1.jpg)
 👋 مرحبًا ، من الجيد أن تكون قادرًا على الانضمام إلى هذه المجموعة
 
 لا تنس أن تجعلني مشرفًا في هذه المجموعة
@@ -118,7 +118,7 @@ async def start(_, message: Message):
     chat_id = message.chat.id
     out = start_pannel()
     await message.reply_text(
-        f"""**[👋](https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg)
+        f"""**[👋](https://te.legra.ph/file/3e3e10364a630da0ef1d1.jpg)
 شكرًا لإدراجي في {message.chat.title}.
 الموسيقى حية.
 
@@ -129,7 +129,7 @@ async def start(_, message: Message):
     )
     return
 
-@Client.on_message(filters.private & filters.incoming & filters.command("MUSIC"))
+@Client.on_message(filters.private & filters.incoming & filters.command("start"))
 async def play(_, message: Message):
     if len(message.command) == 1:
         user_id = message.from_user.id
@@ -138,11 +138,11 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""**
-[𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜  𝐟𝐢𝐫𝐞](https://telegra.ph/file/a7d4219016b38254e8803.jpg)
+[ ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ɴᴀsᴀ](https://te.legra.ph/file/3e3e10364a630da0ef1d1.jpg)
 ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ
-〉 ♬ 𝐝𝐞𝐯 𝐦𝐮𝐬𝐢𝐜 : [.َ ‹𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷](https://t.me/Q_o_ll)
-〉 ♬ 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞 : [𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞](https://t.me/B_O_N_t)
-〉 ♬ 𝐓𝐖𝐒𝐎𝐋 : [𝐆𝐑𝐎𝐔𝐏 𝐓𝐖𝐒](t.me/Q_b_2l)
+〉 ♬ ᴅᴇᴠ ᴍᴜsɪᴄ : [ʙᴀɴᴅᴀ](https://t.me/Q_o_ll)
+〉 ♬ ᴍᴜsɪᴄ ɴᴀsᴀ : [ᴍᴜsɪᴄ ɴᴀsᴀ](https://t.me/B_O_N_T)
+〉 ♬ ᴛᴡsᴏʟ : [ᴛᴡsᴏʟ](t.me/U_00l)
  ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ**""",
             parse_mode="markdown",
             reply_markup=pstart_markup,
