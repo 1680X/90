@@ -1,5 +1,5 @@
 tgcrypto
-pyrogram==1.4.12pybase64
+pyrogram==1.4.16
 youtube-search-python
 yt-dlp==2021.11.10.1
 ffmpeg-python
